@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kn_seatselect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- クリックを拾うだけの透明な層 (画面は暗転させない) -->
+    <div id="overlay" class="overlay" hidden></div>
+
+    <!-- 操作ヒントと座席リストは同じ位置に排他で出る -->
+    <div class="anchor">
+        <div id="hint" class="hint" hidden></div>
+
+        <div id="panel" class="panel" role="dialog" aria-modal="true" aria-label="座席を選択" hidden>
+            <div id="seats"></div>
+            <div id="panel-foot" class="panel-foot"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
